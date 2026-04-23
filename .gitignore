@@ -38,3 +38,7 @@ build/
 
 # Misc
 progress.txt
+
+# Keep scripts directory but ignore output files
+scripts/*.json
+scripts/*.csv

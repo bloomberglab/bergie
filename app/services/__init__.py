@@ -1,3 +1,5 @@
+# app/services/__init__.py
+
 from app.services.user_service import (
     get_or_create_user,
     get_user_by_platform_id,
@@ -12,6 +14,11 @@ from app.services.conversation_service import (
     close_conversation,
     escalate_conversation,
 )
+from app.services.ai_service import (
+    get_ai_response,
+    build_system_prompt,
+    AIResponse,
+)
 
 __all__ = [
     "get_or_create_user",
@@ -24,4 +31,7 @@ __all__ = [
     "save_message",
     "close_conversation",
     "escalate_conversation",
+    "get_ai_response",
+    "build_system_prompt",
+    "AIResponse",
 ]
